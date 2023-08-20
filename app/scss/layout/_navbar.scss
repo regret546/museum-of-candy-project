@@ -1,0 +1,16 @@
+#mainNavbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: var(--fw--200);
+  .navbar-brand {
+    font-size: 1.5rem;
+    color: var(--clr--navbar-red);
+  }
+  .nav-link {
+    color: var(--clr--white);
+    &:hover {
+      color: var(--clr--navbar-red);
+    }
+  }
+}

@@ -1,1 +1,37 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  /* Font Family */
+  --ff--primary: "Nunito", sans-serif;
+  /* Font Weight */
+  --fw--200: 200;
+  --fw--300: 300;
+  --fw--400: 4400;
+  --fw--700: 700;
+}
+
+:root {
+  --clr--bg: hsl(8, 61%, 90%);
+  --clr--navbar-red: hsl(355, 83%, 51%);
+  --clr--white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--clr--bg);
+  font-family: var(--ff--primary);
+}
+
+#mainNavbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: var(--fw--200);
+}
+#mainNavbar .navbar-brand {
+  font-size: 1.5rem;
+  color: var(--clr--navbar-red);
+}
+#mainNavbar .nav-link {
+  color: var(--clr--white);
+}
+#mainNavbar .nav-link:hover {
+  color: var(--clr--navbar-red);
+}/*# sourceMappingURL=style.css.map */
