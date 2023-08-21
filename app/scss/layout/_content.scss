@@ -1,0 +1,39 @@
+.content {
+  padding-left: 0;
+  padding-right: 0;
+  &__info1 {
+    display: none;
+    &_text {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--clr--white);
+      h2 {
+        font-weight: var(--fw--100);
+        font-size: 4rem;
+        span {
+          color: var(--clr--navbar-red);
+        }
+      }
+    }
+  }
+
+  &__info2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1000px) {
+    &__info1 {
+      display: block;
+    }
+    @media (max-width: 1350px) {
+      &__info1 {
+        &_text {
+          h2 {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

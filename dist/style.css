@@ -2,6 +2,7 @@
   /* Font Family */
   --ff--primary: "Nunito", sans-serif;
   /* Font Weight */
+  --fw--100: 100;
   --fw--200: 200;
   --fw--300: 300;
   --fw--400: 4400;
@@ -22,8 +23,8 @@ body {
 #mainNavbar {
   padding-top: 0;
   padding-bottom: 0;
-  font-size: 1.5rem;
-  font-weight: var(--fw--200);
+  font-size: 1.4rem;
+  font-weight: var(--fw--100);
 }
 #mainNavbar .navbar-brand {
   font-size: 1.5rem;
@@ -34,4 +35,38 @@ body {
 }
 #mainNavbar .nav-link:hover {
   color: var(--clr--navbar-red);
+}
+
+.content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.content__info1 {
+  display: none;
+}
+.content__info1_text {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--clr--white);
+}
+.content__info1_text h2 {
+  font-weight: var(--fw--100);
+  font-size: 4rem;
+}
+.content__info1_text h2 span {
+  color: var(--clr--navbar-red);
+}
+.content__info2 {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 1000px) {
+  .content__info1 {
+    display: block;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .content__info1_text h2 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
