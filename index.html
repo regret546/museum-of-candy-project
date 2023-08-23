@@ -72,10 +72,62 @@
       </section>
       <section class="content-main container-fluid">
         <div class="row align-items-center">
-          <div class="col-md-6 order-1">
+          <div class="content-main__info1 order-1 col-md-6">
             <img src="/images/milk.png" class="img-fluid" alt="Milk" />
           </div>
-          <div class="col-md-6 order-2">
+          <div class="content-main__info2 order-2 col-md-6">
+            <div class="row text-center justify-content-center">
+              <div class="col-10 col-lg-8">
+                <h2>MUSEUM OF CANDY</h2>
+                <img
+                  src="images/lolli_icon.png"
+                  alt="lolli"
+                  class="d-none d-lg-inline"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, iste molestiae beatae, maiores deserunt in voluptatibus
+                  aspernatur architecto excepturi delectus soluta? Ipsa,
+                  deleniti dolorem hic consequatur repellat eveniet quidem
+                  voluptate necessitatibus dolorum delectus minus vitae, ut,
+                  veritatis sint ipsum magnam autem nam ex deserunt debitis
+                  eaque ratione! Nobis, quidem assumenda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="content-main__info4 col-md-6">
+            <div class="row text-center justify-content-center">
+              <div class="col-10 col-lg-8">
+                <h2>MUSEUM OF CANDY</h2>
+                <img
+                  src="images/lolli_icon.png"
+                  alt="lolli"
+                  class="d-none d-lg-inline"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Neque, iste molestiae beatae, maiores deserunt in voluptatibus
+                  aspernatur architecto excepturi delectus soluta? Ipsa,
+                  deleniti dolorem hic consequatur repellat eveniet quidem
+                  voluptate necessitatibus dolorum delectus minus vitae, ut,
+                  veritatis sint ipsum magnam autem nam ex deserunt debitis
+                  eaque ratione! Nobis, quidem assumenda.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-main__info3 col-md-6">
+            <img src="/images/gumball.png" class="img-fluid" alt="Milk" />
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="content-main__info5 order-1 col-md-6">
+            <img src="/images/sprinkles.png" class="img-fluid" alt="Milk" />
+          </div>
+          <div class="content-main__info6 order-2 col-md-6">
             <div class="row text-center justify-content-center">
               <div class="col-10 col-lg-8">
                 <h2>MUSEUM OF CANDY</h2>
@@ -99,6 +151,7 @@
         </div>
       </section>
     </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -114,5 +167,14 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>

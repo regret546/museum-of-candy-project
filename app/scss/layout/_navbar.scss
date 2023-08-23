@@ -14,3 +14,7 @@
     }
   }
 }
+.navbar.scrolled {
+  background-color: var(--clr--navbar-purple);
+  transition: background 800ms;
+}

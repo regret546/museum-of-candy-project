@@ -1,2 +1,6 @@
 .main {
+  @media (min-width: 991px) {
+    display: grid;
+    gap: 3rem;
+  }
 }
